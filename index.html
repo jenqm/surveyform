@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC-Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">University of Coolness</h1>
+    <p id="description">The University of Coolness is updating all student files.<br> Please fill out the details below before December 31st, 2022.</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">First and Last Name: <input id="name" type="text" required placeholder="Oscar Guzman"></label>
+            <label id="email-label">Email: <input id="email" type="email" required placeholder="email@email.com"></label>
+            <label id="number-label">Student ID Number: <input id="number" type="number" max="10" min="1" placeholder="0101110111"></label> 
+        </fieldset>
+        <fieldset>
+            Select your major:
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Internation Coolness</option>
+                <option value="2">Occupational Calmness</option>
+                <option value="3">Applied Relaxedness</option>
+            </select>
+        </fieldset>
+        <fieldset class="status" name="student-status">
+            <label>What is your current student status?
+                <br>
+                <input id="active" type="radio" name="active-inactive-withdrew" value="active">Active
+                <br>
+                <input id="inactive" type="radio" name="active-inactive-withdrew" value="inactive">Inactive
+                <br>
+                <input id="withdrew" type="radio" name="active-inactive-withdrew" value="withdrew">Withdrew
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="year">What year were most of the courses you took this year?
+                <br>
+                <input type="checkbox" name="freshman" value="Freshman" id="freshman">Freshman
+                <br>
+                <input type="checkbox" name="sophmore" value="Sophmore" id="sophmore">Sophmore
+                <br>
+                <input type="checkbox" name="junior" value="Junior" id="junior">Junior
+                <br>
+                <input type="checkbox" name="senior" value="Senior" id="senior">Senior
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Tell us what you love about University of Coolness:
+                <textarea name="bio" rows="3" cols="30" placeholder="UC teaches me the most important things in life..."></textarea>
+            </label>
+        </fieldset>
+        <button id="submit" type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>

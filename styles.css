@@ -1,0 +1,89 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color:goldenrod;
+}
+
+#title {
+    font-family: Georgia;
+    font-size: 3em;
+    color: #91141c;
+    text-shadow: 3px 2px 4px rgb(239, 239, 239);
+    -webkit-text-stroke: .3px rgb(97, 9, 9); 
+    font-weight: 900;
+    padding: 0px 0px 10px 10px 
+}
+
+#description {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+fieldset {
+    border: none;
+    padding: 10px 0;
+    height: fit-content;
+    width: auto;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    margin: 5px 0 0 0;
+    width: 100%;
+    height: fit-content;
+    padding: 2px 2px 2px 5px;
+    background-color: #230a0a;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+input[type="radio"]{
+    width: 10%;
+    vertical-align: text-top;
+}
+
+input[type="checkbox"]{
+    width: 10%;
+    vertical-align: text-top;
+}
+ 
+ #submit{
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:rgb(255, 255, 255);
+  border-color:#6c0303;
+  font-weight:bold;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+  box-shadow: 0px 10px 14px -7px #aea1a1;
+  text-shadow: 0px 1px 0px #000000;
+  background:linear-gradient(#700109, #91141c);
+  margin: 1em 0;
+  }
+::placeholder {
+    color: #ffffff8e;
+}
+
+textarea{
+    height: 100px;
+}
